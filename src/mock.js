@@ -1,2 +1,3 @@
 export const transactions = [...Array(10).keys()];
-export const accounts = [{ id: 0, sum: 45 }, { id: 1, sum: 350 }, { id: 2, sum: 120 }, { id: 3, sum: 95 }];
+export const nav = [...Array(4).keys()];
+export const cards = [{ id: 0, amount: 45 }, { id: 1, amount: 350 }, { id: 2, amount: 120 }, { id: 3, amount: 95 }];
