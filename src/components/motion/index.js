@@ -1,5 +1,5 @@
-import { motion } from "framer-motion";
-import { Box, Flex, Heading, Text } from "theme-ui";
+import { motion } from 'framer-motion';
+import { Box, Flex, Heading, Text } from 'theme-ui';
 
 export const MotionBox = motion.custom(Box);
 export const MotionFlex = motion.custom(Flex);

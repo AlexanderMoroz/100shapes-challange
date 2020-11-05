@@ -7,7 +7,7 @@ const colors = {
 }
 
 const theme = {
-	space: [0, 4, 8, 16, 24, 48, 96, 192, 256, 512],
+	space: [0, 4, 8, 12, 16, 24, 32, 44, 108, 192, 256, 512],
 	fonts: {
 		body: `'Raleway', sans-serif;`,
 		heading: `'Raleway', sans-serif;`
@@ -19,7 +19,7 @@ const theme = {
 		root: {
 			// uses the theme values provided above
 			fontFamily: 'body',
-			fontWeight: 'body',
+			fontWeight: 0,
 		},
 	},
 	gradient: `linear-gradient(180deg, ${colors.primary} 0%, ${colors.secondary} 100%)`

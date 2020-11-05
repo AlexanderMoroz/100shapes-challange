@@ -1,23 +1,22 @@
-import React from "react";
-import { Flex, Box, Heading } from 'theme-ui';
+import React from 'react';
+import { Box, Heading } from 'theme-ui';
 import theme from '../../theme';
-import { MotionBox, MotionFlex } from "../motion";
-// TODO use profile icon from export
+import { MotionBox, MotionFlex } from '../motion';
 import { BsPlus } from 'react-icons/bs';
 
 const Transactions = ({ active, transactions }) => {
 	return (
 		<MotionBox
 			animate={{
-				y: active ? -100 : 0
+				y: active ? -80 : 0
 			}}
 			transition={{ ease: 'linear', duration: 0.3 }}
-			px={4}
-			pt={32}
+			px={5}
+			pt={5}
 			sx={{ position: 'relative', borderRadius: 24 }}
 			bg="background"
 		>
-			<Heading as="h3" sx={{ fontSize: 0 }} mb={11}>Transactions</Heading>
+			<Heading as="h3" sx={{ fontSize: 1 }} mb={3}>Transactions</Heading>
 			<MotionFlex
 				as="button"
 				p={0}
@@ -27,7 +26,7 @@ const Transactions = ({ active, transactions }) => {
 				exit={{ display: 'none' }}
 				sx={{
 					position: 'absolute',
-					right: '10%',
+					right: '6%',
 					top: '-29px',
 					alignItems: 'center',
 					justifyContent: 'center',

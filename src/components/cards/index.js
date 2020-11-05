@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 import { Flex, Box } from 'theme-ui';
-import { MotionBox, MotionFlex, MotionHeading, MotionText } from "../motion";
+import { MotionBox, MotionFlex, MotionHeading, MotionText } from '../motion';
 import theme from '../../theme';
-// Export in svg from Figma for some reason was inaccurate, so I've decided to use npm module
+// Export in svg from Figma for some reason was inaccurate, so using react-icons
 import { CgProfile } from 'react-icons/cg';
 
 const Cards = ({ cards, onCardClick = () => null }) => (
-	<Box sx={{ overflow: 'auto', width: '100%' }} px={4} pt={3}>
+	<Box sx={{ overflow: 'auto', width: '100%' }} px={5} pt={3}>
 		<Flex sx={{ listStyle: 'none' }} p={0}>
 			{cards.map(({ amount, id }) => (
 				<MotionBox
@@ -34,7 +34,7 @@ const Cards = ({ cards, onCardClick = () => null }) => (
 					}}
 				>
 					<MotionHeading layoutId={`card-heading-${id}`}  sx={{ color: 'background', fontSize: 0, fontWeight: 0 }}>You're owed</MotionHeading>
-					<MotionFlex layoutId={`card-amount-${id}`} sx={{ alignItems: 'center', color: "background" }} pt={2} pb={5}>
+					<MotionFlex layoutId={`card-amount-${id}`} sx={{ alignItems: 'center', color: "background" }} pt={2} pb={7}>
 						<MotionText layoutId={`card-currency-${id}`} sx={{ fontSize: 18, fontWeight: 0 }} as="span">£</MotionText>
 						<MotionText layoutId={`card-value-${id}`} sx={{ fontSize: 38, fontWeight: 0 }} as="span">{amount}</MotionText>
 					</MotionFlex>

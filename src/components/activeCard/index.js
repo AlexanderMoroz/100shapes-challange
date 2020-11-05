@@ -1,8 +1,7 @@
-import React from "react";
-import { AnimatePresence } from "framer-motion"
+import React from 'react';
+import { AnimatePresence } from 'framer-motion';
 import theme from '../../theme';
-import { MotionBox, MotionFlex, MotionHeading, MotionText } from "../motion";
-// TODO use profile icon from export
+import { MotionBox, MotionFlex, MotionHeading, MotionText } from '../motion';
 import { CgProfile } from 'react-icons/cg';
 
 const ActiveCard = ({ card }) => (
@@ -21,9 +20,9 @@ const ActiveCard = ({ card }) => (
 						background: theme.gradient,
 						display: 'flex',
 						flexDirection: 'column',
-						px: `${theme.space[4] + theme.space[1] * 2}px`,
+						px: `${theme.space[5] + theme.space[1] * 2}px`,
 						pb: 4,
-						pt: 6,
+						pt: 8,
 						borderRadius: 8,
 						minHeight: 280,
 						outline: 'none',
@@ -46,6 +45,6 @@ const ActiveCard = ({ card }) => (
 			) : null
 		}
 	</AnimatePresence>
-)
+);
 
 export default ActiveCard;

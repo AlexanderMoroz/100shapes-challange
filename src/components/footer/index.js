@@ -1,7 +1,7 @@
 import React from 'react';
 import { Flex, Box } from 'theme-ui';
-import { nav } from "../../mock";
-import theme from "../../theme";
+import { nav } from '../../mock';
+import theme from '../../theme';
 
 const Footer = ({ activeCard = null }) => {
 	const activeIndex = activeCard ? 1 : 0;
@@ -10,8 +10,9 @@ const Footer = ({ activeCard = null }) => {
 			as="footer"
 			bg="background"
 			p={4}
+			pb={5}
 			sx={{
-				justifyContent: 'space-between',
+				justifyContent: 'space-around',
 				position: 'fixed',
 				bottom: 0,
 				left: 0,
