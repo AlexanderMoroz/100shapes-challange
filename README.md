@@ -7,6 +7,8 @@ Project created with:
 
 **It's not 100% pixel-perfect. Just don't want to bring additional inconsistency in theme.ts**
 
+[Demo on netlify](https://100-shapes-challange.netlify.app/)
+
 ## Available Scripts
 
 In the project directory, you can run:
