@@ -1,15 +1,20 @@
 import React, { useMemo } from 'react';
-import Header from "../header";
-import { AnimateSharedLayout } from 'framer-motion';
-import ActiveCard from '../activeCard';
+import { RouteComponentProps } from 'react-router';
 import { Flex, Heading } from 'theme-ui';
+import { AnimateSharedLayout } from 'framer-motion';
+import Header from "../header";
+import ActiveCard from '../activeCard';
 import Cards from '../cards';
 import { cards, transactions } from "../../mock";
 import Transactions from '../transactions';
 import Footer from '../footer';
 
-const Home: React.FunctionComponent<{ match: any }> = ({ match }) => {
-	let { id } = match.params;
+interface MatchParams {
+	id: string;
+}
+
+const Home: React.FunctionComponent<RouteComponentProps<MatchParams>> = ({ match }) => {
+	const { id } = match.params;
 	const activeCard = useMemo(() => cards.find(a => a.id === Number(id)), [id]);
 
 	return (
