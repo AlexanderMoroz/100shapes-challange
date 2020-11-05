@@ -38,7 +38,7 @@ const ActiveCard = ({ card }) => (
 					<MotionBox
 						layoutId={`card-profile-${card.id}`}
 						bg="background"
-						sx={{ opacity: '0 !important', height: 16, borderRadius: '50%', alignSelf: 'flex-end', '& svg': { m: '-1px' }}}
+						sx={{ opacity: '0 !important', height: 16, borderRadius: '50%', alignSelf: 'flex-start', '& svg': { m: '-1px' }}}
 					>
 						<CgProfile size={18} color={theme.colors.text} />
 					</MotionBox>

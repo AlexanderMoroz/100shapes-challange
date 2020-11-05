@@ -1,4 +1,4 @@
-import React, { useMemo, useRef, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { ThemeProvider, Flex, Heading } from 'theme-ui';
 import { AnimateSharedLayout } from "framer-motion"
 import theme from './theme';
@@ -11,12 +11,11 @@ import Transactions from "./components/transactions";
 
 const App = () => {
 	const [cardId, setCardId] = useState(null);
-	const wrapperRef = useRef(null);
 	const activeCard = useMemo(() => cards.find(a => a.id === cardId), [cardId]);
 
 	return (
 		<ThemeProvider theme={theme}>
-			<Flex sx={{ flexDirection: 'column', position: 'relative', pb: 84 }} ref={wrapperRef}>
+			<Flex sx={{ flexDirection: 'column', position: 'relative', pb: 84, overflow: 'hidden' }}>
 				<Header onBackClick={() => setCardId(null)}	/>
 				<AnimateSharedLayout type="crossfade">
 					<ActiveCard card={activeCard} />
