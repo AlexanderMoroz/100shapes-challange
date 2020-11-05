@@ -21,7 +21,7 @@ const Header = ({ onBackClick = () => null, }) => (
 		<Button bg="transparent" p={0} color="background" onClick={onBackClick} sx={{ outline: 'none', }}>
 			<FiChevronLeft size={30} />
 		</Button>
-		<Button bg="background" p={0} color="text"  sx={{ borderRadius: '50%', width: 30, height: 30, '& svg': { m: '-2px' } }}>
+		<Button bg="background" p={0} color="text"  sx={{ borderRadius: '50%', width: 30, height: 30, '& svg': { m: '-1px' } }}>
 			<CgProfile size={32} />
 		</Button>
 	</Flex>
