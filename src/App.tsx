@@ -9,8 +9,8 @@ import Cards from './components/cards';
 import ActiveCard from './components/activeCard';
 import Transactions from './components/transactions';
 
-const App = () => {
-	const [cardId, setCardId] = useState(null);
+const App: React.FunctionComponent = () => {
+	const [cardId, setCardId] = useState<number |  null>(null);
 	const activeCard = useMemo(() => cards.find(a => a.id === cardId), [cardId]);
 
 	return (

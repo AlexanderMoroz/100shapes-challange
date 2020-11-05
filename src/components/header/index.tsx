@@ -3,7 +3,11 @@ import { Flex, Button } from 'theme-ui';
 import { CgProfile } from 'react-icons/cg';
 import { FiChevronLeft } from 'react-icons/fi';
 
-const Header = ({ onBackClick = () => null, }) => (
+interface IHeader {
+	onBackClick: () => void
+}
+
+const Header: React.FunctionComponent<IHeader> = ({ onBackClick = () => null, }) => (
 	<Flex
 		as="header"
 		px={5}

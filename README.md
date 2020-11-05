@@ -5,7 +5,7 @@ Project created with:
 * [Theme UI](https://theme-ui.com/home/)
 * [Framer Motion](https://www.framer.com/motion/)
 
-**It's not 100% pixel-perfect. Just don't want to bring additional inconsistency in theme.js**
+**It's not 100% pixel-perfect. Just don't want to bring additional inconsistency in theme.ts**
 
 ## Available Scripts
 

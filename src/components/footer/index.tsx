@@ -2,8 +2,13 @@ import React from 'react';
 import { Flex, Box } from 'theme-ui';
 import { nav } from '../../mock';
 import theme from '../../theme';
+import { ICard } from '../cards';
 
-const Footer = ({ activeCard = null }) => {
+interface IFooter {
+	activeCard: ICard | undefined;
+}
+
+const Footer: React.FunctionComponent<IFooter> = ({ activeCard = null }) => {
 	const activeIndex = activeCard ? 1 : 0;
 	return (
 		<Flex

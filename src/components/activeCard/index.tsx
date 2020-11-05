@@ -3,8 +3,13 @@ import { AnimatePresence } from 'framer-motion';
 import theme from '../../theme';
 import { MotionBox, MotionFlex, MotionHeading, MotionText } from '../motion';
 import { CgProfile } from 'react-icons/cg';
+import { ICard}  from '../cards';
 
-const ActiveCard = ({ card }) => (
+interface IActiveCard {
+	card: ICard | undefined;
+}
+
+const ActiveCard: React.FunctionComponent<IActiveCard> = ({ card }) => (
 	<AnimatePresence>
 		{
 			card ? (

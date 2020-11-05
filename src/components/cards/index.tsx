@@ -5,7 +5,17 @@ import theme from '../../theme';
 // Export in svg from Figma for some reason was inaccurate, so using react-icons
 import { CgProfile } from 'react-icons/cg';
 
-const Cards = ({ cards, onCardClick = () => null }) => (
+export interface ICard {
+	id: number,
+	amount: number,
+}
+
+interface ICards {
+	cards: ICard[],
+	onCardClick: (id: number) => void,
+}
+
+const Cards: React.FunctionComponent<ICards> = ({ cards, onCardClick = () => null }) => (
 	<Box sx={{ overflow: 'auto', width: '100%' }} px={5} pt={3}>
 		<Flex sx={{ listStyle: 'none' }} p={0}>
 			{cards.map(({ amount, id }) => (

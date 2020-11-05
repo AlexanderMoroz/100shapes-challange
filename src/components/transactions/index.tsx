@@ -4,7 +4,12 @@ import theme from '../../theme';
 import { MotionBox, MotionFlex } from '../motion';
 import { BsPlus } from 'react-icons/bs';
 
-const Transactions = ({ active, transactions }) => {
+interface ITransactions {
+	active: boolean;
+	transactions: number[];
+}
+
+const Transactions: React.FunctionComponent<ITransactions> = ({ active, transactions }) => {
 	return (
 		<MotionBox
 			animate={{
