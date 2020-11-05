@@ -6,7 +6,7 @@ import { CgProfile } from 'react-icons/cg';
 import { ICard}  from '../cards';
 
 interface IActiveCard {
-	card: ICard | undefined;
+	card?: ICard;
 }
 
 const ActiveCard: React.FunctionComponent<IActiveCard> = ({ card }) => (

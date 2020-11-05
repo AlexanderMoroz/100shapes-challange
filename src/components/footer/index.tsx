@@ -5,7 +5,7 @@ import theme from '../../theme';
 import { ICard } from '../cards';
 
 interface IFooter {
-	activeCard: ICard | undefined;
+	activeCard?: ICard;
 }
 
 const Footer: React.FunctionComponent<IFooter> = ({ activeCard = null }) => {
